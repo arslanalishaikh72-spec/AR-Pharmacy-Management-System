@@ -45,7 +45,7 @@ The purpose of this project is to develop an efficient pharmacy management syste
 
 - Java
 - MySQL
-- JDBC
+- JDBC (IDE: Netbeans)
 
 ---
 
@@ -62,12 +62,11 @@ The purpose of this project is to develop an efficient pharmacy management syste
 
 ## Demo Video Link
 
-Paste your YouTube video link here
-
-Example:
-https://youtube.com/your-video-link
+https://youtu.be/kAXr9yIge_Y
 
 ---
 
 ## GitHub Repository Link
+
+https://github.com/arslanalishaikh72-spec/AR-Pharmacy-Management-System
 
