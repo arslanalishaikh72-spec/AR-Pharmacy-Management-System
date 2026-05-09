@@ -58,59 +58,51 @@ The purpose of this project is to develop an efficient pharmacy management syste
 5. Add the JDBC library from the `lib` folder.
 6. Run the `Main.java` file to start the application.
 
-
-
 ## Project Structure
+```
 ARPharmacy/
+├── src/
+│   └── arpharmacy/
+│       ├── Main.java               ← Entry point
+│       ├── Theme.java              ← Colour / font constants
+│       ├── UIHelper.java           ← Reusable Swing component factory
+│       ├── db/
+│       │   └── DBConnection.java   ← JDBC singleton
+│       └── panels/
+│           ├── LoginPanel.java
+│           ├── AdminPanel.java
+│           ├── AddUserPanel.java
+│           ├── ViewUsersPanel.java
+│           ├── UpdateRolePanel.java
+│           ├── MedicinePanel.java  ← Admin CRUD + Customer buy
+│           └── CustomerPanel.java
+├── sql/
+│   └── pharmacy_setup.sql
+├── lib/                            ← Put mysql-connector-j.jar here
+├── nbproject/
+│   ├── project.xml
+│   └── project.properties
+├── build.xml
+├── manifest.mf
+└── README.md
+```
 
-src/
+## Troubleshooting
+**"Cannot connect to database"**
+- Make sure MySQL service is running (`services.msc` on Windows).
+- Check DB_USER / DB_PASS in `DBConnection.java`.
+- Verify `ar_pharmacy` database exists (run the SQL script).
 
-arpharmacy/
+**"MySQL Driver not found"**
+- The `mysql-connector-j-*.jar` is not in your classpath.
+- In NetBeans: right-click Libraries → Add JAR/Folder.
 
-Main.java — Entry point
+**Compile errors**
+- Ensure JDK 11+ is set as the project platform in NetBeans.
 
-Theme.java — Colour / font constants
 
-UIHelper.java — Reusable Swing component factory
 
-db/
 
-DBConnection.java — JDBC singleton
-
-panels/
-
-LoginPanel.java
-
-AdminPanel.java
-
-AddUserPanel.java
-
-ViewUsersPanel.java
-
-UpdateRolePanel.java
-
-MedicinePanel.java — Admin CRUD + Customer buy
-
-CustomerPanel.java
-
-sql/
-
-pharmacy_setup.sql
-
-lib/ — Put mysql-connector-j.jar here
-
-nbproject/
-
-project.xml
-
-project.properties
-
-build.xml
-
-manifest.mf
-
-README.md
----
 
 ## Demo Video Link
 
