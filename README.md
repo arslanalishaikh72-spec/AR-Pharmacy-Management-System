@@ -114,3 +114,9 @@ https://youtu.be/kAXr9yIge_Y
 
 https://github.com/arslanalishaikh72-spec/AR-Pharmacy-Management-System
 
+---
+
+## Contributors
+
+- Arsalan
+- Rehan
